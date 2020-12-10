@@ -1,0 +1,11 @@
+.list {
+    padding: 0;
+}
+
+.list-item {
+    padding: 1rem !important;
+}
+
+.list-item:hover {
+    background-color: mediumseagreen;
+}
