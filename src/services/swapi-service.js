@@ -1,7 +1,7 @@
 
 export class SwapiService {
 
-    _apiBase = `https://swapi.dev/api/`;
+    _apiBase = `http://swapi.dev/api/`;
 
     getResource = async (url) => {
         const res = await fetch(`${this._apiBase}${url}`);
