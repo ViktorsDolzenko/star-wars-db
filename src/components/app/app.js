@@ -7,7 +7,7 @@ import {SwapiService} from "../../services/swapi-service";
 import {MockSwapiServices} from "../../services/mock-swapi-services";
 import {SwapiServiceProvider} from "../swapi-service-context";
 import {PeoplePage, PlanetPage, StarshipPage} from "../pages";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import StarshipDetails from "../sw-componenets/starship-details";
 import {WelcomePage} from "../welcome-page/welcome-page";
 
@@ -61,6 +61,7 @@ export class App extends React.Component {
                     onClick={this.toggleRandomPlanet}>Toggle
                     Random Planet
                 </button>
+                <Switch>
                 <Route exact path="/" component={WelcomePage}/>
                         <Route exact path="/people/:id?" component={PeoplePage}/>
                         <Route exact path="/planets" component={PlanetPage}/>
@@ -70,6 +71,7 @@ export class App extends React.Component {
                                    const {id} = match.params
                                  return  <StarshipDetails itemId={id}/>
                                }} />
+                </Switch>
             </div>
                 </BrowserRouter>
             </SwapiServiceProvider>
