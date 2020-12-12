@@ -52,7 +52,7 @@ export class App extends React.Component {
         const status = this.state.swapiService instanceof SwapiService ? "Get Mock Data" : "Get Api Data";
         return (
             <SwapiServiceProvider value={this.state.swapiService}>
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div>
                 <Header onDataChange={this.onDataChange} status={status}/>
                 {planet}
