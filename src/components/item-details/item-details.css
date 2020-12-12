@@ -1,0 +1,26 @@
+.item-section{
+    padding: 2rem 2rem 3.4rem 2rem;
+    font-weight: bold;
+}
+
+.item-section .person-img {
+    height: 187px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.item-section .person-name {
+    padding-left: 2rem;
+}
+
+.item-section .person-info {
+    padding-left: .25rem;
+}
+
+.info-title{
+    padding-right: 1rem;
+}
+
+.showMore {
+    position: absolute;
+}

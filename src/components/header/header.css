@@ -1,0 +1,21 @@
+.logo {
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+}
+
+.navbar-nav {
+    padding-left: 2rem
+}
+
+.nav-item {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: mediumseagreen;
+}
