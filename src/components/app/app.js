@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 import {Header} from '../header'
 import {RandomPlanet} from "../random-planet";
 import {ErrorIndicator} from "../error-indicator";
@@ -62,7 +62,7 @@ export class App extends React.Component {
         const status = this.state.swapiService instanceof SwapiService ? "Get Mock Data" : "Get Api Data";
         return (
             <SwapiServiceProvider value={this.state.swapiService}>
-                <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <HashRouter basename={process.env.PUBLIC_URL}>
             <div>
                 <Header onDataChange={this.onDataChange} status={status}/>
                 {planet}
@@ -94,7 +94,7 @@ export class App extends React.Component {
                     <Route render={() => <h1>Page not found</h1>}/>
                 </Switch>
             </div>
-                </BrowserRouter>
+                </HashRouter>
             </SwapiServiceProvider>
         );
     }
