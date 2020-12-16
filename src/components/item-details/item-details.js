@@ -1,7 +1,7 @@
 import React from 'react';
 import './item-details.css'
-import {Spinner} from "../spinner/spinner";
-import ItemView from "../item-view"
+import {Spinner} from "../spinner/";
+import {ItemView} from "../item-view"
 
 export const Record = ({item, field, label}) => {
     return(

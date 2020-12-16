@@ -23,6 +23,12 @@ export const Header = ({onDataChange, status}) => {
                     <li className="nav-item">
                         <Link to="/starships/" className="nav-link" href="#">Starships</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/login/" className="nav-link" href="#">Login</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/secret/" className="nav-link" href="#">Secret</Link>
+                    </li>
                 </ul>
                 <li className="nav-item">
                     <button className="btn btn-success" onClick={onDataChange}>{status}</button>

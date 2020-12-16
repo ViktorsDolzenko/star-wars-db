@@ -1,5 +1,5 @@
 import React from "react";
-import ItemDetails, {Record} from "../item-details";
+import {ItemDetails, Record} from "../item-details";
 import {withSwapiService} from "../../hocs";
 
 const PlanetDetails = (props) => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import {SwapiService} from '../../services/swapi-service'
-import {Spinner} from "../spinner/spinner";
-import PlanetView from "../planet-view"
-import ErrorIndicator from "../error-indicator";
+import {Spinner} from "../spinner";
+import {PlanetView} from "../planet-view"
+import {ErrorIndicator} from "../error-indicator";
 
 export class RandomPlanet extends React.Component{
 
